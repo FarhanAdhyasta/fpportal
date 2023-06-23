@@ -49,7 +49,15 @@ const Student = () => {
   };
 
   if (loading) {
-    return <p>Loading ...</p>;
+    return (
+      <>
+      <NavBar />
+        
+          <p>Loading ...</p>
+        
+      <Footer />
+      </>
+    )
   }
 
   return (
@@ -105,8 +113,8 @@ const Student = () => {
           </Tbody>
         </Table>
         </TableContainer>
-      <Footer />
       </Box>
+      <Footer />
     </>
   );
 };

@@ -77,7 +77,15 @@ const EditStudent = () => {
   };
   
   if (loading) {
-    return <p>Loading ...</p>;
+    return (
+      <>
+      <NavBar />
+        
+          <p>Loading ...</p>
+        
+      <Footer />
+      </>
+    )
   }
 
   return (
@@ -186,8 +194,8 @@ const EditStudent = () => {
           Edit Student
         </Button>
       </form>
+        <Footer />
       </Box>
-      <Footer />
     </>
   );
 };

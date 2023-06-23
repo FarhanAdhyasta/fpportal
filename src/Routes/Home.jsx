@@ -10,7 +10,7 @@ const Home = () => {
         <Stack spacing={6}>
           <Text
             // bgGradient="linear(to-l, #7928CA, #FF0080)"
-            bgClip="text"
+            // bgClip="text"
             fontSize="5xl"
             fontWeight="extrabold"
           >

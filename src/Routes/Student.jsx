@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Box, Select, Table, Thead, Tbody, Tr, Th, Td, Button } from '@chakra-ui/react';
+import { TableContainer, Box, Select, Table, Thead, Tbody, Tr, Th, Td, Button } from '@chakra-ui/react';
 import NavBar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { studentId } from '../Task';
@@ -68,6 +68,8 @@ const Student = () => {
           <option value="Fakultas Teknik">Fakultas Teknik</option>
           <option value="Fakultas Teknologi Informasi dan Sains">Fakultas Teknologi Informasi dan Sains</option>
         </Select>
+        <TableContainer className='test-table-container'>
+
         <Table variant="striped" colorScheme="pink" mt={4}>
           <Thead>
             <Tr>
@@ -102,8 +104,9 @@ const Student = () => {
             ))}
           </Tbody>
         </Table>
-      </Box>
+        </TableContainer>
       <Footer />
+      </Box>
     </>
   );
 };

@@ -9,7 +9,7 @@ const Home = () => {
       <Flex align="center" justify="center" minHeight="100vh">
         <Stack spacing={6}>
           <Text
-            bgGradient="linear(to-l, #7928CA, #FF0080)"
+            // bgGradient="linear(to-l, #7928CA, #FF0080)"
             bgClip="text"
             fontSize="5xl"
             fontWeight="extrabold"
